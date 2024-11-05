@@ -41,5 +41,4 @@ By exploring the Tenzies app, you can learn:
 
 ## Links
 
-- [Live Demo]()
-- [GitHub Repository]()
+- [Live Dem](https://tenzies-game-nu-kohl.vercel.app/)
