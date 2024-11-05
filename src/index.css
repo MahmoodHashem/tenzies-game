@@ -7,14 +7,14 @@ body{
   align-content: center;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Karla,  sans-serif;
 }
 
 
 
 main{
   background-color:#F5F5F5;
-  height: 20rem;
+  height: 25rem;
   max-width: 22rem;
   margin: auto;
   padding: 1rem;
@@ -62,8 +62,60 @@ main{
   background-color: white;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15); 
+  font-family: inherit;
 }
+
+button div{
+  width: 10px;
+  height: 10px;
+  background-color:black;
+  border-radius: 50%;
+     }
+
+button[data-dot='1'], button[data-dot='2'], button[data-dot='3']{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button[data-dot='3'] div {
+  flex: 1;
+}
+
+button[data-dot='4'], button[data-dot='5'], button[data-dot='6']{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+button[data-dot='5'] div:nth-child(4){
+  grid-row: 3 ;
+  grid-column: 2;
+}
+
+button[data-dot='5'] div:nth-child(3){
+  
+  grid-row: 3;
+}
+
+button[data-dot='5'] div:nth-child(5){
+  position: relative;
+  left: 9px;
+}
+
+
+.roll-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
 
 .roll-dice {
   height: 50px;
@@ -77,9 +129,6 @@ main{
   cursor: pointer;
 }
 
-.roll-dice:focus {
-  outline: none;
-}
 
 .roll-dice:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
